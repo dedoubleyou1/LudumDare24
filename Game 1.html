@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<!-- saved from url=(0047)http://www.davidwallin.net/ludumdare/game1.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">  
+	<meta charset="utf-8">  
+	<title>Game 1</title>  
+	<meta name="description" content="Game 1">  
+	<meta name="David Wallin" content="game">  
+	<link rel="stylesheet" href="http://www.davidwallin.net/ludumdare/game1.css">  
+	<script src="./Game 1_files/jquery.min.js"></script>
+	<script src="./Game 1_files/jquery-ui.min.js"></script>
+	<script src="./Game 1_files/game1.js"></script>
+</head>  
+<body><div id="StayFocusd-infobar" style="display:none;"><img src="chrome-extension://laankejkbhbdhmipfmgcngdelahlfoji/img/eye_19x19_red.png"><span id="StayFocusd-infobar-msg"></span><span id="StayFocusd-infobar-links"><a href="http://www.davidwallin.net/ludumdare/game1.html#" id="StayFocusd-infobar-never-show">hide forever</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="http://www.davidwallin.net/ludumdare/game1.html#" id="StayFocusd-infobar-hide">hide once</a></span></div>
+
+	
+	<div class="clearfloat">
+		<div id="character">
+			<div id="characterhead" class="droppable ui-droppable"><div class="draggable head2"></div></div>
+			<div id="characterbody" class="droppable ui-droppable"><div class="draggable body2"></div></div>
+			<div id="characterfeet" class="droppable ui-droppable"><div class="draggable feet2"></div></div>
+			<ul>
+				<li class="fight hidden">Damaged: <b class="damage character"></b></li>
+				<li>Health: <b class="health character">400</b></li>
+				<li>Strength: <b class="strength character">45</b></li>
+				<li>Agility: <b class="agility character">75</b></li>
+				<li>Precision: <b class="precision character">55</b></li>
+				<li>Fire: <b class="fire character">0</b></li>
+				<li>Water: <b class="water character">60</b></li>
+				<li>Grass: <b class="grass character">0</b></li>
+			</ul>
+		</div>
+		
+		<div id="enemy" class="fight hidden">
+			<div id="enemyhead" class="droppable"></div>
+			<div id="enemybody" class="droppable"></div>
+			<div id="enemyfeet" class="droppable"></div>
+			<ul>
+				<li>Damaged: <b class="damage enemy"></b></li>
+				<li>Health: <b class="health enemy"></b></li>
+				<li>Strength: <b class="strength enemy"></b></li>
+				<li>Agility: <b class="agility enemy"></b></li>
+				<li>Precision: <b class="precision enemy"></b></li>
+				<li>Fire: <b class="fire enemy"></b></li>
+				<li>Water: <b class="water enemy"></b></li>
+				<li>Grass: <b class="grass enemy"></b></li>
+			</ul>
+		</div>
+	</div>
+	
+	<div class="clearfloat fight hidden">
+		<button id="headAbility" type="button">Peck</button>
+		<button id="bodyAbility" type="button">Water Slap</button>
+		<button id="feetAbility" type="button">Surf Splash</button>
+	</div>
+	
+	<div class="clearfloat charedit">
+		<button id="randomize" type="button">Randomize</button>
+		<button id="fight" type="button">Fight!</button>
+	</div>
+	
+	<ul id="headGroup" class="charedit clearfloat">
+		<li><div id="head1" class="head head1 hidden draggable ui-draggable"></div></li>
+		<li><div id="head2" class="head head2 draggable ui-draggable"></div></li>
+		<li><div id="head3" class="head head3 hidden draggable ui-draggable"></div></li>
+		<li><div id="head4" class="head head4 hidden draggable ui-draggable"></div></li>
+		<li><div id="head5" class="head head5 hidden draggable ui-draggable"></div></li>
+	</ul>
+	<ul id="bodyGroup" class="charedit clearfloat">
+		<li><div id="body1" class="body body1 hidden draggable ui-draggable"></div></li>
+		<li><div id="body2" class="body body2 draggable ui-draggable"></div></li>
+		<li><div id="body3" class="body body3 hidden draggable ui-draggable"></div></li>
+		<li><div id="body4" class="body body4 hidden draggable ui-draggable"></div></li>
+		<li><div id="body5" class="body body5 hidden draggable ui-draggable"></div></li>
+	</ul>
+	<ul id="feetGroup" class="charedit clearfloat">
+		<li><div id="feet1" class="feet feet1 hidden draggable ui-draggable"></div></li>
+		<li><div id="feet2" class="feet feet2 draggable ui-draggable"></div></li>
+		<li><div id="feet3" class="feet feet3 hidden draggable ui-draggable"></div></li>
+		<li><div id="feet4" class="feet feet4 hidden draggable ui-draggable"></div></li>
+		<li><div id="feet5" class="feet feet5 hidden draggable ui-draggable"></div></li>
+	</ul>
+
+  
+  </body></html>
